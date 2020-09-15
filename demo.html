@@ -29,34 +29,24 @@
     }
     .container {
     background-color: white;
-    width: 45%;
-    margin-left: 5%;
+    width: 80%;
+    min-width: 325px;
+    margin: 16px;
     position: relative;
     border-radius: 12px;
-    filter: blur(0.4px);
-    opacity: 0.9;
     }
     .image {
-    background: url(images/drawers.jpg) no-repeat ;
-    background-size: cover;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    width: 39%;
-    border-radius: 12px 0 0 12px;
+      height: 200px;
+    background: 0 -15px/cover url(images/drawers.jpg) no-repeat ;
+    border-radius: 12px 12px 0 0;
     }
     .right-content {
-    width: 62%;
-    position: relative;
-    margin-left: 39%;
-    padding: 20px 40px;
+    padding: 1.6em 2.6em 0 2.6em;
     }
     h2, strong {
-    padding: 9px 0;
-    color: hsl(214, 15%, 30%);
+    color: hsl(217, 19%, 35%);
     }
     p{
-    padding: 10px 0;
     color:hsl(214, 17%, 51%);
     }
     span {
@@ -66,49 +56,9 @@
     width: 10%;
     border-radius: 50%;
     }
-    .details {
-    padding: 10px 20px;
-    }
-    button {
-    border-radius: 50%;
-    border:0;
-    width: 30px;
-    height: 30px;
-    float: right;
-    margin-left: 128px;
-    justify-content: center;
-    background-color: hsl(210, 46%, 95%);
-    }
-    button:hover, button:focus {
-      background-color: hsl(214, 17%, 51%);
-    }
-    button:hover svg path, button:focus svg path {
-      fill: white;
-    }
-    .shareoptions {
-    background-color: hsl(224, 26%, 28%);    
-    width: 16vw;
-    /*border-radius: 12px;*/
-    height: 7vh;
-    justify-content: center;
-    margin-top: -38%;
-    margin-left: 36%;
-    border-radius: 0;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    }
-    .shareoptions img {
-     padding: 0 8px;
-   }
-    .shareoptions span {
-      letter-spacing: 4px;
-      font-size: 12px;
-      padding-right: 10px ;
-    }
+    
     .attribution {
-    transform: translate(10%, 900%);
-    letter-spacing: 2px;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
     }
     .attribution a {
@@ -138,13 +88,13 @@
             <span> 28 Jun 2020 </span>
           </div>
           <div class="share">
-            <button class="flex">
+            <button aria-label="share" class="flex">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
               <path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
             </svg>
             </button>
             <!-- Hidden sharing options -->
-            <div class="shareoptions flex">
+            <div class="flex">
               <span>SHARE</span>
               <a href="#"><img src="images/icon-facebook.svg" alt="facebook" /></a>
               <a href="#"><img src="images/icon-twitter.svg" alt="facebook" /></a>
